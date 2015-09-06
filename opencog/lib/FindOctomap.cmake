@@ -1,5 +1,5 @@
 set(OCTOMAP_LIBPATH
-   /opt/ros/indigo/lib)
+   /opt/ros/jade/lib)
 
 find_library(OCTOMAP_LIBRARY NAMES octomap
    PATH ${OCTOMAP_LIBPATH})
@@ -15,7 +15,7 @@ set(OCTOMAP_LIBRARIES
 INCLUDE (CheckIncludeFiles)
 
 find_path(OCTOMAP_INCLUDE_DIR octomap/octomap.h
-	PATH /usr/include /opt/ros/indigo/include /usr/local/include 
+	PATH /usr/include /opt/ros/jade/include /usr/local/include 
 )
 
 message("heyheyhey ${OCTOMAP_INCLUDE_DIR}")
